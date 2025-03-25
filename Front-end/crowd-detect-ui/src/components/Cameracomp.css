@@ -1,0 +1,16 @@
+/* Image Styling */
+.grid-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; 
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(100, 49, 144, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.grid-image:hover {
+    transform: scale(1.05);
+}

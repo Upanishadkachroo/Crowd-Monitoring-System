@@ -1,0 +1,65 @@
+.indiv-camera-display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.backBtn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.preview {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.spacer {
+  width: 75px; /* Keeps balance for spacing */
+}
+
+/* Grid Layout */
+.grid-contain {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr; /* 1/2 + 1/4 + 1/4 */
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.grid-item {
+  padding: 15px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Video Section */
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Info Sections */
+.info-section {
+  background-color: #dfe6e9;
+  border: 1px solid #b2bec3;
+}
