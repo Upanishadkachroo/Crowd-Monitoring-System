@@ -181,12 +181,10 @@ class ToastMessage(tk.Toplevel):
 class CrowdMonitoringApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Advanced Crowd Monitoring System")
+        self.root.title("Crowd Monitoring System")
 
         # Try multiple video sources
         video_sources = [
-            "crowd.mp4",
-            "crowd_video.mp4",
             "Crowd Monitoring using Computer Vision!.mp4",
             0  # Webcam fallback
         ]
