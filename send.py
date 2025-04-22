@@ -76,6 +76,8 @@ class CrowdAnalyzer:
         self.cluster_centers = []
         self.low_density_zones = []
         self.voronoi_regions = []
+        self.last_voronoi_update = 0# Add this
+        self.voronoi_update_interval = 1.5# Add this (seconds)
 
     def update_positions(self, positions):
         self.people_positions = positions
@@ -97,6 +99,10 @@ class CrowdAnalyzer:
         return self.cluster_centers
 
     def calculate_voronoi_density(self, frame_shape):
+        current_time = time.time()  # Add this
+        if current_time - self.last_voronoi_update < self.voronoi_update_interval: # Add this condition
+            return self.voronoi_regions  # Return cached regions if not enough time has passed
+    
         if len(self.people_positions) < 3:
             return []
 
@@ -134,6 +140,7 @@ class CrowdAnalyzer:
                 'people_count': people_in_region
             })
 
+        self.last_voronoi_update = current_time  # Add this at the end
         return self.voronoi_regions
 
     def visualize_voronoi_density(self, frame):
