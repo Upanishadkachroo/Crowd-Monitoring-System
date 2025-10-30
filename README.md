@@ -54,7 +54,7 @@ The final system is called the **Smart Crowd Monitoring and Choke Point Preventi
 ## 🖼️ System Architecture / Visualization
 
 <p align="center">
-  <img src="sample.png" alt="System Architecture" width="700">
+  <img src="sample.jpg" alt="System Architecture" width="700">
 </p>
 
 > 🧭 *Above: An overview of the Smart Crowd Monitoring System architecture — integrating detection, clustering, analysis, and visualization.*
