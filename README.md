@@ -60,6 +60,7 @@ Optimizing bandwidth for efficient **real-time processing**
 > *Above: An overview of the Smart Crowd Monitoring System — integrating detection, clustering, analysis, and visualization.*
 
 ---
+<!--
 ## Team
 
 **Upanishad Kachroo** – Core Algorithm Design & Backend Logic  
@@ -70,3 +71,4 @@ Optimizing bandwidth for efficient **real-time processing**
 ---
 
 *“Preventing chaos before it happens — because every crowd deserves safety.”* 
+-->
